@@ -16,6 +16,18 @@ The Convolutional Neural Network will be trained on ResNet18. Transfer Learning 
 
 
 ## Note
+The dataset must have the following directory structure:
+
+```
+root/dog/xxx.png
+root/dog/xxy.png
+root/dog/xxz.png
+
+root/cat/123.png
+root/cat/nsdf3.png
+root/cat/asd932_.png
+```
+
 If you've trained and saved the model already, then comment the training phase to not to train the model again.
 ```python
 model_conv = train_model(model_conv, criterion, optimizer_conv,
